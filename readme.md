@@ -1,15 +1,17 @@
 # Git Teams & Workflow
 
 ## Learning Objectives
+> After this lesson, students will be able to:
 
-- Distinguish between git workflow models to organize code changes and collaborate as a team
+- Distinguish between git workflow models to collaborate on a project
+- Explain and weigh the pros and cons of each of the 4 workflows we'll discuss
 - Use branches and pull requests to isolate changes tied to specific features
 - Efficiently and correctly resolve merge conflicts
 
 ## Framing
 > 5 min / 0:05
 
-Although you've all been using Git and Github for a couple months, you've largely been doing so individually. In the Real World (tm), it'll be rare that you develop a project individually - you'll more likely be working as part of a team of developers.
+Although you've all been using Git and Github for a couple months, you've largely been doing so individually. In the Real World (tm), you'll rarely develop a project individually - you'll more likely be working as part of a team of developers.
 
 For the upcoming Project 3, we'll be working in small teams to gain a sense of what collaborative development is like. Clear, repeatable version control practices, combined with good communication make collaboration easier and more efficient. In order to build up to that, we need to make sure we're building on a solid foundation of Git basics.
 
@@ -18,7 +20,7 @@ For the upcoming Project 3, we'll be working in small teams to gain a sense of w
 
 ### Why Git?
 
-Apart from being free and open source, git is also a superior system to other methods of version control in many ways. Git is a *"distributed" version control tool*, meaning that there will be a 'redundant' copy of the repository held by everyone working on the project. We've been just thinking of these as **forks**.
+Apart from being free and open source, git is also a superior system to other methods of version control in many ways. Git is a *"distributed" version control tool*, meaning that there will be a 'redundant' copy of the repository held by everyone working on the project.
 
 It also means that there is no centralized approval structure for making changes to a project; instead, every student who clones the repository has their own **complete copy**, which they can edit and change as they wish. This makes it much easier to use when working in groups, since each member can have an up-to-date and complete repository.
 
@@ -42,9 +44,9 @@ You'll see branches used for a couple of common reasons:
 
 As we've learned, we can create branches to create new versions of our project within a single repository. We can do this to build out a new feature in isolation and then merge those features into the rest of our codebase when we're ready. 
 
-When we go to merge our work, our coworkers or teammates have likely continued working off of master and may have already merged their work. So when we go to merge our work we may find that we've edited or changed files that one of our team mates has changed. When this happens, we get a merge conflict.
+When we go to merge our work, our coworkers or teammates have likely continued working off of master and may have already merged their work. So when we go to merge our work we may find that we've changed a file or files that one of our teammates also changed. When this happens, we get merge conflicts.
 
-When we merge two branches, Git will generally take care of merging our changes for us. However, if Git encounters a change or set of changes that it can't merge itself, it will prompt you to manually resolve the differences. Merge conflicts look like this:
+Merge conflicts look like this:
 
 ```sh
 <<<<<<< HEAD
@@ -57,7 +59,7 @@ var x;
 
 The first section is the version that exists on the current branch; the second section is the version that exists on the branch you're trying to merge in. Figure out which version of the code makes the most sense moving forward, delete the version that doesn't and all the extra stuff that Git adds (`<<<<<<<`, `=======`, etc.) and run `git commit` to finalize the merge.
 
-For example, if we decided we only needed var x, delete the other "stuff":
+For example, if we decided we only needed `var x`, delete the other "stuff":
 
 ```diff
 - <<<<<<< HEAD
