@@ -1,4 +1,3 @@
-different test
 # Git Teams & Workflow
 
 ## Learning Objectives
@@ -91,7 +90,7 @@ Git is an extremely flexible tool and you can use it in many different ways. You
 
 The Centralized workflow is good for people just starting out with git: there is low overhead and it's easy to get started. The remote repo has only a single branch, `master`. All collaborators have separate clones of the repository. They can each work independently on separate things. However, before anyone runs a `git push`, they need to run `git pull` to make sure that their **local** copy of the `master` branch isn't out of sync with the **remote** `master` branch.
 
-![Centralized Workflow Diagram](https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/centralized-workflow/01.svg)
+![Centralized Workflow Diagram](https://wac-cdn.atlassian.com/dam/jcr:0869c664-5bc1-4bf2-bef0-12f3814b3187/01.svg?cdnVersion=jh)
 
 > From [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
 
