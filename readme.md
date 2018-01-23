@@ -1,7 +1,6 @@
 # Git Teams & Workflow
 
 ## Learning Objectives
-> After this lesson, students will be able to:
 
 - Distinguish between git workflow models to collaborate on a project
 - Explain and weigh the pros and cons of each of the 4 workflows we'll discuss
@@ -9,6 +8,7 @@
 - Efficiently and correctly resolve merge conflicts
 
 ## Framing
+
 > 5 min / 0:05
 
 Although you've all been using Git and Github for a couple months, you've largely been doing so individually. In the Real World (tm), you'll rarely develop a project individually - you'll more likely be working as part of a team of developers.
@@ -36,7 +36,7 @@ You'll see branches used for a couple of common reasons:
 
 3. To allow easy bug fixes on a stable version of a project while features are being developed.
 
-![Git Branch Diagram](https://www.atlassian.com/git/images/tutorials/collaborating/using-branches/01.svg)
+![Git Branch Diagram]('./git-branching.svg')
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
