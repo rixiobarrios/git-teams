@@ -36,7 +36,7 @@ You'll see branches used for a couple of common reasons:
 
 3. To allow easy bug fixes on a stable version of a project while features are being developed.
 
-![Git Branch Diagram](git-branching.svg)
+![Git Branch Diagram](./git-branching.svg)
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
