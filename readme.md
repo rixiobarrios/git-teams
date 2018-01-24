@@ -103,7 +103,7 @@ The Centralized workflow is good for people just starting out with git: there is
 ### Feature Branch Workflow
 > 5 min / 1:05
 
-The Feature Branch model is very similar to the Centralized workflow but with one big difference: branches! The remote repo has a `master` branch and a branch for each feature that is under active development. All collaborators have a clone of the repository with the `master` branch and any feature branches that they are currently working on. When you finish working on your feature will: (1) push up your changes to the remote feature branch and (2) submit a pull request from the feature branch asking for it to be merged into the remote `master` branch.
+The Feature Branch model is very similar to the Centralized workflow but with one big difference: branches! The remote repo has a `master` branch and a branch for each feature that is under active development. All collaborators have a clone of the repository with the `master` branch and any feature branches that they are currently working on. When you finish working on your feature: (1) push up your changes to the remote feature branch and (2) submit a pull request from the feature branch asking for it to be merged into the remote `master` branch.
 
 ![Feature Branch Workflow](https://wac-cdn.atlassian.com/dam/jcr:80d671b1-8a4b-4378-914c-e25fe3d2dcce/07.svg?cdnVersion=dj)
 
@@ -144,7 +144,7 @@ Watch and take notes as I run through Gitflow on the [Feature Branching](https:/
 * Working off of the `develop` or `dev` branch
 * Creating a feature branch
 * Merging changes in to the `develop` branch
-* "Cutting a release": creating a release branch off of `master`, merging `develop` into the release branch and then merging the release branch into `master`
+* "Cutting a release": creating a release branch off of `develop` and merging `release` into `master`
 * Doing a "Hot Fix": Creating a `hot-fix` branch off of `master`, fixing a bug, then merging the fix in to `master`
 
 ### Fork and PR Workflow
@@ -173,11 +173,11 @@ Turn and discuss the following with your neighbor/pair:
 
 ### Project Week: What does that mean for you?
 
-Your upcoming Project 3 will be a group project. In order for this project to be a success for all of you, it is ***vital*** that you decide (together) on a git workflow and plan you work. Review the [lesson on agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
+Your upcoming Project 3 will be a group project. In order for this project to be a success for all of you, it is ***vital*** that you decide (together) on a git workflow and plan your work. Review the [lesson on agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
 
 You will need to plan your work using everything we've taught you: ERDs, user stories, kanban (using GitHub Projects) and a git workflow.
 
-Spend the first morning deciding on what you're going to build. Finish your ERDs and then write out your user stories in a GitHub Project on your project repository. Pick a git workflow and get it set up. Plan sprints (a day or two) with concrete goals on what everyone is going to finish by the end of the sprint. Regularly check in as a team to make sure everyone is still on track, if you have a blocker (something the team didn't foresee or plan for or something is more complex than you initially scoped) bring that to your check in and adjust your sprint schedule. Try pair programming on difficult tasks or blockers. 
+Spend the first morning deciding on what you're going to build. Finish your ERDs and then write out your user stories. Pick a git workflow and get it set up. Plan sprints (a day or two) with concrete goals on what everyone is going to finish by the end of the sprint. Regularly check in as a team to make sure everyone is still on track, if you have a blocker (something the team didn't foresee or plan for or something is more complex than you initially scoped) bring that to your check in and adjust your sprint schedule. Try pair programming on difficult tasks or blockers.
 
 ### Do code reviews
 
