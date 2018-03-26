@@ -59,7 +59,7 @@ You'll see branches used for a couple of common reasons:
    active development and not ready to be deployed.
 
 ![Git Branch
-Diagram](https://www.atlassian.com/git/images/tutorials/collaborating/using-branches/01.svg)
+Diagram](git-branching.svg)
 
 > From [Atlassian - Git Branching
 > Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
@@ -131,7 +131,7 @@ can each work independently on separate things. However, before anyone runs a
 of the `master` branch isn't out of sync with the **remote** `master` branch.
 
 ![Centralized Workflow
-Diagram](https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/centralized-workflow/01.svg)
+Diagram](centralized-workflow.svg)
 
 > From [Atlassian - Comparing
 > Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
