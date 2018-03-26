@@ -1,22 +1,19 @@
 # Git Teams & Workflow
 
 ## Learning Objectives
-> After this lesson, students will be able to:
 
 - Distinguish between git workflow models to collaborate on a project
 - Explain and weigh the pros and cons of each of the 4 workflows we'll discuss
 - Use branches and pull requests to isolate changes tied to specific features
 - Efficiently and correctly resolve merge conflicts
 
-## Framing
-> 5 min / 0:05
+## Framing (5 min / 0:05)
 
 Although you've all been using Git and Github for a couple months, you've largely been doing so individually. In the Real World (tm), you'll rarely develop a project individually - you'll more likely be working as part of a team of developers.
 
 For the upcoming Project 3, we'll be working in small teams to gain a sense of what collaborative development is like. Clear, repeatable version control practices, combined with good communication make collaboration easier and more efficient. In order to build up to that, we need to make sure we're building on a solid foundation of Git basics.
 
-## Review Git: Branching & Merging
-> 15 min / 0:20
+## Review Git: Branching & Merging (15 min / 0:20)
 
 ### Why Git?
 
@@ -72,21 +69,17 @@ For example, if we decided we only needed `var x`, delete the other "stuff":
 
 Now, we have only the code we need and can commit the changes we made to resolve the merge conflict.
 
-#### You do: Merging and Merge Conflicts
-> 20 minutes / 0:40
+#### You do: Merging and Merge Conflicts (20 min / 0:40)
 
 With a pair, follow along to this exercise on creating and resolving merge conflicts: [https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts](https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts).
 
-## Break
-> 10 minutes / 0:50
+## Break (10 min / 0:50)
 
-## Git Workflows
-> 5 min / 0:55
+## Git Workflows (5 min / 0:55)
 
 Git is an extremely flexible tool and you can use it in many different ways. You'll already be familiar with some of the following workflows, though maybe not by name. You'll also find many variations on the below workflows.
 
-### Centralized Workflow
-> 5 min / 1:00
+### Centralized Workflow (5 min / 1:00)
 
 The Centralized workflow is good for people just starting out with git: there is low overhead and it's easy to get started. The remote repo has only a single branch, `master`. All collaborators have separate clones of the repository. They can each work independently on separate things. However, before anyone runs a `git push`, they need to run `git pull` to make sure that their **local** copy of the `master` branch isn't out of sync with the **remote** `master` branch.
 
@@ -100,8 +93,7 @@ The Centralized workflow is good for people just starting out with git: there is
 
 *Use this model when working alone on a project or with only one other collaborator and the project is small.*
 
-### Feature Branch Workflow
-> 5 min / 1:05
+### Feature Branch Workflow (5 min / 1:05)
 
 The Feature Branch model is very similar to the Centralized workflow but with one big difference: branches! The remote repo has a `master` branch and a branch for each feature that is under active development. All collaborators have a clone of the repository with the `master` branch and any feature branches that they are currently working on. When you finish working on your feature will: (1) push up your changes to the remote feature branch and (2) submit a pull request from the feature branch asking for it to be merged into the remote `master` branch.
 
@@ -115,13 +107,11 @@ The Feature Branch model is very similar to the Centralized workflow but with on
 
 *Use this model when working on a small to medium sized project with others that doesn't require strict collaboration*
 
-#### You Do: Feature Branching
-> 15 min / 1:20
+#### You Do: Feature Branching (15 min / 1:20)
 
 With your pair, follow along to this guided exercise on using feature branches: [https://git.generalassemb.ly/ga-wdi-exercises/feature-branches](https://git.generalassemb.ly/ga-wdi-exercises/feature-branches)
 
-### Gitflow
-> 15 min / 1:35
+### Gitflow (15 min / 1:35)
 
 The Gitflow workflow builds on the Feature Branch model by assigning very specific roles to different branches and providing strict guidelines for how these branches interact. Under Gitflow, a repository will have a `master` branch, a branch for each feature under development, branches for each environment (i.e. staging and production) and each release.
 
@@ -135,20 +125,19 @@ The Gitflow workflow builds on the Feature Branch model by assigning very specif
 
 *Use this model when working on medium to large sized project with others, especially if working on a team of 5+ developers.*
 
-#### I Do: Gitflow
-> 10 min / 1:45
+#### You Do: Gitflow (10 min / 1:45)
 
-Watch and take notes as I run through Gitflow on the [Feature Branching](https://git.generalassemb.ly/ga-wdi-exercises/feature-branches) exercise we just did.
+Grab a marker from the front of the classroom. As we go through each of the key steps in Gitflow draw a diagram on your table of how to execute that step.
 
 **The key steps in GitFlow are:**
-* Working off of the `develop` or `dev` branch
-* Creating a feature branch
-* Merging changes in to the `develop` branch
-* "Cutting a release": creating a release branch off of `master`, merging `develop` into the release branch and then merging the release branch into `master`
-* Doing a "Hot Fix": Creating a `hot-fix` branch off of `master`, fixing a bug, then merging the fix in to `master`
 
-### Fork and PR Workflow
-> 5 min / 1:50
+- Working off of the `develop` or `dev` branch
+- Creating a feature branch
+- Merging changes in to the `develop` branch
+- "Cutting a release": creating a release branch off of `master`, merging `develop` into the release branch and then merging the release branch into `master`
+- Doing a "Hot Fix": Creating a `hot-fix` branch off of `master`, fixing a bug, then merging the fix in to `master`
+
+### Fork and PR Workflow (5 min / 1:50)
 
 The Fork and PR approach is the model we're all most familiar with: it's how we submit our homework, labs and projects. Under this model, everyone maintains their own remote repository (their fork). Changes are submitted via pull request. 
 
@@ -160,16 +149,16 @@ How It Works: One collaborator plays the role of 'Integration Manager'. They are
 
 *Use this model when working on an open source project or when working with or as an outside contractor or freelancer.*
 
-### Turn & Talk
-> 5 min, 5 min / 2:05
+### Turn & Talk (10 min / 2:00)
+
+> 5 min work, 5 min review
 
 Turn and discuss the following with your neighbor/pair:
 
 1. What are some additional strengths and weaknesses of each workflow?
 2. Which do you think will make the most sense for your upcoming Project 3?
 
-## Software Development and Collaboration
-> 10 min / 2:15
+## Software Development and Collaboration (10 min / 2:15)
 
 ### Project Week: What does that mean for you?
 
@@ -189,22 +178,25 @@ Additionally, many work environments practice some form of code review, so it's 
 
 Furthermore, Github allows us to comment directly on PRs, so we can easily incorporate informal code reviews into our workflow.
 
-## Closing
-> 15 min / 2:30
+## Closing (15 min / 2:30)
 
 ### Review Questions
+
 - Identify the syntax needed to create a new branch. How about creating a new branch and switching to it?
 - Why should you never work on the same files on different branches?
 - Explain the difference between rebase and merge
 
 ### Cheat Sheets
+
 - [Github Official](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 - [Interactive Git](http://ndpsoftware.com/git-cheatsheet.html#loc=stash;) (Uses slightly different terminology that we're used to, but nifty)
 
 ### Rebase vs Merge
+
 ![Rebase vs Merge](https://raw.githubusercontent.com/gitforteams/diagrams/master/flowcharts/rebase-or-merge.png)
 
 ### Further Reading
+
 - [GitHub docs on resolving a merge conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 - [Git Workflows Overview](https://www.atlassian.com/git/tutorials/comparing-workflows)
 - [Git Teams](http://gitforteams.com/)
@@ -221,17 +213,17 @@ What if you are a little out of sync with your teammates and are worried that a 
 Use `git-fetch` and `git-diff` to see the changes instead!
 
 ```bash
-$ git fetch <remote> <branch>
-$ git diff <remote>/<branch>
+git fetch <remote> <branch>
+git diff <remote>/<branch>
 ```
 
 One of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to try that commit again, you can run `git commit --amend` with the `--amend` option...
 
 ```sh
-$ git commit --amend
+git commit --amend
 ```
 
-**Deleting Branches: Locally VS Remote**
+### Deleting Branches: Locally VS Remote
 
 Locally...
 
@@ -243,7 +235,7 @@ Remote...
 
 `git push origin :<branch>` Deletes Remote Branch
 
-**Git Blame**
+### Git Blame
 
 `git blame <file_name>`
 
@@ -255,11 +247,11 @@ Additionally, this feature is available to view on Github!
 
 To use git blame on `GitHub`:
 
-* Navigate to a repository, and click on a file that you're interested in.
-* Click on the Blame button in the upper-right tab list.
-* Browse the list of changes in a file.
+- Navigate to a repository, and click on a file that you're interested in.
+- Click on the Blame button in the upper-right tab list.
+- Browse the list of changes in a file.
 
-**Git Aliases**
+### Git Aliases
 
 Aliases allow us to configure shortcuts and can help speed up our workflow!
 
@@ -267,7 +259,7 @@ We can configure them in our `.gitconfig` or `.bash_profile`
 
 Example Aliases...
 
-```
+```sh
 [alias]
   g = git
 	current = rev-parse --abbrev-ref HEAD
@@ -276,7 +268,7 @@ Example Aliases...
 
 If you are adding an Alias to your bash profile you might have to reload to see your updates by running `$ source ~/.bash_profile`
 
-**Tools & Resources**
+### Tools & Resources
 
 [`git-wtf`](http://git-wt-commit.rubyforge.org/): Script that displays the state of your repository in a readable and easy-to-scan format
 
@@ -285,15 +277,15 @@ If you are adding an Alias to your bash profile you might have to reload to see 
 
 [`hub`](https://github.com/github/hub): "is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier." Hub is built and maintained by GitHub
 
-### Rebasing
+## Rebasing
 
 Rebasing allows us to rearrange and effectively rewrite our commit history. Rather than combining the most recent commits from two different branches via a single commit, it combines the two branches themselves, rearranging their commits while ***re-writing*** the repo's commit history. For that reason, it can be dangerous.
 
-**Git Merge**
+### Git Merge
 
 ![Git Pull/Merge](https://git.generalassemb.ly/storage/user/6376/files/aee6a68e-81b6-11e7-9fb7-31c12053681f)
 
-**Git Rebase**
+### Git Rebase
 
 ![Git Rebase](https://git.generalassemb.ly/storage/user/6376/files/c6f3d54e-81b6-11e7-9f1b-c5a81d1e0207)
 
@@ -301,7 +293,7 @@ Rebasing allows us to rearrange and effectively rewrite our commit history. Rath
 
 <details>
 
-<summary>***Example Scenario***</summary>
+<summary>Example Scenario</summary>
 
 Here's what a rebase looks like. Suppose we have two branches, a master and a feature branch.
 
@@ -312,7 +304,3 @@ Rebase is extremely useful for cleaning up your commit history, but it also carr
 Like git merge, git rebase also sometimes runs into merge conflicts that need to be resolved. The procedure for doing this is almost the same; once you fix the conflicts, run `git rebase --continue` to complete the rebase.
 
 </details>
-
-
-
-
