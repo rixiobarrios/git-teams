@@ -308,6 +308,7 @@ Merge](https://raw.githubusercontent.com/gitforteams/diagrams/master/flowcharts/
 
 ### Further Reading
 
+- [How to use Git efficiently](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369)
 - [GitHub docs on resolving a merge
   conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 - [Git Workflows
