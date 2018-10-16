@@ -159,7 +159,7 @@ they are currently working on. When you finish working on your feature you will:
 Workflow](https://wac-cdn.atlassian.com/dam/jcr:80d671b1-8a4b-4378-914c-e25fe3d2dcce/07.svg?cdnVersion=dj)
 
 > From [Atlassian - Comparing
-> Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
+> Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
 **(+)** Better isolation than the Centralized model, but sharing is still easy.
 Very flexible.
