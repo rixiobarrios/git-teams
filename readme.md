@@ -107,10 +107,10 @@ For example, if we decided we only needed `var x`, delete the other "stuff":
 Now, we have only the code we need and can commit the changes we made to resolve
 the merge conflict.
 
-#### You do: Merging and Merge Conflicts (20 min / 0:40)
+## You do: Merging and Merge Conflicts (20 min / 0:40)
 
 With a pair, follow along to this exercise on creating and resolving merge
-conflicts:
+conflicts (The exercise is located on git enterprise but should be done on github):
 [https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts](https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts).
 
 ## Break (10 min / 0:50)
