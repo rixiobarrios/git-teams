@@ -110,7 +110,7 @@ the merge conflict.
 ## You do: Merging and Merge Conflicts (20 min / 0:40)
 
 With a pair, follow along to this exercise on creating and resolving merge
-conflicts (The exercise is located on git enterprise but should be done on github):
+conflicts (The exercise is located on git enterprise but should be done on github!!):
 [https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts](https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts).
 
 ## Break (10 min / 0:50)
@@ -171,9 +171,9 @@ for larger projects.
 *Use this model when working on a small to medium sized project with others that
 doesn't require strict collaboration*
 
-#### You Do: Feature Branching (15 min / 1:20)
+## You Do: Feature Branching (15 min / 1:20)
 
-With your pair, follow along to this guided exercise on using feature branches:
+With your pair, follow along to this guided exercise on using feature branches(this should be done on git enterprise):
 [https://git.generalassemb.ly/ga-wdi-exercises/feature-branches](https://git.generalassemb.ly/ga-wdi-exercises/feature-branches)
 
 ### Gitflow (15 min / 1:35)
@@ -190,9 +190,9 @@ Workflow](https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2
 > From [Atlassian - Comparing
 > Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
-**(+)** Features are most isolated from each other and sharing work is still
+**(+)** Features are isolated from each other and sharing work is
 easy. It's easy to work on multiple, separate features simultaneously and merge
-them in a single release. It's designed to fit in nicely with Agile.
+them in a single release. It's designed to fit in nicely with Agile methodologies.
 
 **(-)** The structure is very rigid - that can be complex and difficult to
 maintain and require more on-boarding for new team members.
@@ -200,7 +200,7 @@ maintain and require more on-boarding for new team members.
 *Use this model when working on medium to large sized project with others,
 especially if working on a team of 5+ developers.*
 
-#### You Do: Gitflow (10 min / 1:45)
+## You Do: Gitflow (10 min / 1:45)
 
 Grab a marker from the front of the classroom. As we go through each of the key
 steps in Gitflow draw a diagram on your table of how to execute that step.
@@ -256,7 +256,7 @@ workflow and plan you work. Review the [lesson on
 agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
 
 You will need to plan your work using everything we've taught you: ERDs, user
-stories, wireframes, kanban (using GitHub Projects) and a git workflow.
+stories, wireframes and a git workflow.
 
 Spend the first part of project week deciding on what you're going to build.
 Finish your ERDs and then write out your user stories in a GitHub Project on
@@ -447,4 +447,95 @@ Like git merge, git rebase also sometimes runs into merge conflicts that need to
 be resolved. The procedure for doing this is almost the same; once you fix the
 conflicts, run `git rebase --continue` to complete the rebase.
 
+</details>
+
+
+
+### Merge VS Rebase.....Just Merge:
+<details>
+<summary>Unless Stackoverflow Declares Otherwise:</summary>
+
+## Merge:
+git checkout -b feature-branch</br>
+do some code</br>
+commit some code on the feature branch</br>
+<pre>
+--------------v----------------------(master)
+               \
+                \
+                 \
+                  >(feature-branch)
+</pre>
+
+git checkout master</br>
+git merge feature-branch</br>
+<pre>
+--------------v----------------------(master)
+               \                       ^
+                \                     /
+                 \                   /
+                  >(feature-branch) /
+</pre>
+
+
+
+## Rebase:
+git checkout -b feature-branch</br>
+do some code</br>
+commit some code on the feature branch</br>
+<pre>
+--------------v----------------------(master)
+               \
+                \
+                 \
+                  >(feature-branch)
+</pre>
+
+### Adds the history of master, after the branch was made, to the history of the feature branch</br>
+### The masters history continues to change after the feature branch is created</br></br>
+git checkout feature-branch</br>
+git rebase master</br>
+<pre>
+--------------v----------------------(master)
+               \                        /
+                \                      / 
+                 \                    /
+                  >(feature-branch) <  
+</pre>  
+
+### Now feature branch includes any changes that happened in masters history after the feature branch was made.</br>
+### You can merge the feature-branch, which now includes the history of master, in to master. </br></br>
+git checkout master</br>
+git merge feature-branch</br>
+<pre>
+--------------*------------------------(master)
+               \                        ^
+                \                      /
+                 \                    /
+                  >(feature-branch)> /  
+</pre>
+
+
+
+
+
+### Here is an example where using rebase could be effective.</br>
+### If we use rebase here we will get the code from completed-feature-branch when we do the rebase</br>
+### If we didn't do this it is more likely that we will have merge conflicts</br>
+<pre>
+                          /--------*(completed-feature-branch)----\
+                         /                                         \
+                        /                                           \   
+--------------*--------*---------------------------------------------*----------------(master)
+               \                                                            ^
+                \                                                           /
+                 \                                                         /      
+                  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>(feature-branch) /           
+</pre>
+
+
+#### See This (I prefer the 2nd answer, but generally.....just merge):
+https://stackoverflow.com/questions/804115/when-do-you-use-git-rebase-instead-of-git-merge
+
+#### I have never needed to rebase unless something was messed up.
 </details>
