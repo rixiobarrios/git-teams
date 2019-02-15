@@ -25,8 +25,8 @@ a solid foundation of Git basics.
 ### Why Git?
 
 Apart from being free and open source, git is also a superior system to other
-methods of version control in many ways. Git is a *"distributed" version control
-tool*, meaning that there will be a 'redundant' copy of the repository held by
+methods of version control in many ways. Git is a _"distributed" version control
+tool_, meaning that there will be a 'redundant' copy of the repository held by
 everyone working on the project.
 
 It also means that there is no centralized approval structure for making changes
@@ -61,15 +61,14 @@ You'll see branches used for a couple of common reasons:
 ![Git Branch
 Diagram](https://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730301/hero.svg)
 
-> From [Atlassian - Git Branching
-> Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
+> From
+> [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
 ### Merging and Merge Conflicts
 
-As we've learned, we can create branches to create new versions of our project from
-within a repository. We can do this to build out a new feature in
-isolation and then merge those features into the rest of our codebase when we're
-ready.
+As we've learned, we can create branches to create new versions of our project
+from within a repository. We can do this to build out a new feature in isolation
+and then merge those features into the rest of our codebase when we're ready.
 
 When we go to merge our work, our coworkers or teammates have likely continued
 working off of master and may have already merged their work. So when we go to
@@ -107,6 +106,19 @@ For example, if we decided we only needed `var x`, delete the other "stuff":
 Now, we have only the code we need and can commit the changes we made to resolve
 the merge conflict.
 
+### Common git commands!
+
+Here are most of the commands you're going to use today and during your project.
+
+| Command                        | Description                                                           |
+| ------------------------------ | --------------------------------------------------------------------- |
+| `git branch`                   | list branches on your local machine                                   |
+| `git branch -a`                | list branches on local machine + remote machines                      |
+| `git branch <branchName>`      | create a new branch but don't switch to it                            |
+| `git checkout <branchName>`    | switch to a branch that already exists                                |
+| `git checkout -b <branchName>` | create a new branch and switch to it                                  |
+| `git merge <branchName>`       | merges the specified branch (`<branchName>`) into the current branch |
+
 #### You do: Merging and Merge Conflicts (20 min / 0:40)
 
 With a pair, follow along to this exercise on creating and resolving merge
@@ -133,15 +145,15 @@ of the `master` branch isn't out of sync with the **remote** `master` branch.
 ![Centralized Workflow
 Diagram](https://wac-cdn.atlassian.com/dam/jcr:0869c664-5bc1-4bf2-bef0-12f3814b3187/01.svg)
 
-> From [Atlassian - Comparing
-> Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
+> From
+> [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
 
 **(+)** Very simple
 
 **(-)** Collaboration is clunky and error-prone
 
-*Use this model when working alone on a project or with only one other
-collaborator and the project is small/insignificant.*
+_Use this model when working alone on a project or with only one other
+collaborator and the project is small/insignificant._
 
 ### Feature Branch Workflow (5 min / 1:05)
 
@@ -158,8 +170,8 @@ they are currently working on. When you finish working on your feature you will:
 ![Feature Branch
 Workflow](https://wac-cdn.atlassian.com/dam/jcr:80d671b1-8a4b-4378-914c-e25fe3d2dcce/07.svg?cdnVersion=dj)
 
-> From [Atlassian - Comparing
-> Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+> From
+> [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
 **(+)** Better isolation than the Centralized model, but sharing is still easy.
 Very flexible.
@@ -168,8 +180,8 @@ Very flexible.
 way between different branches, and that lack of structure can be problematic
 for larger projects.
 
-*Use this model when working on a small to medium sized project with others that
-doesn't require strict collaboration*
+_Use this model when working on a small to medium sized project with others that
+doesn't require strict collaboration_
 
 #### You Do: Feature Branching (15 min / 1:20)
 
@@ -185,20 +197,20 @@ branch, a branch for each feature under development, branches for each
 environment (i.e. staging and production) and each release.
 
 ![Feature Branch
-Workflow](https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg)
+Workflow](<https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg>)
 
-> From [Atlassian - Comparing
-> Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+> From
+> [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 **(+)** Features are most isolated from each other and sharing work is still
-easy. It's easy to work on multiple, separate features simultaneously and merge
+easy. It's easy to work on multiple, separate fetures simultaneously and merge
 them in a single release. It's designed to fit in nicely with Agile.
 
 **(-)** The structure is very rigid - that can be complex and difficult to
 maintain and require more on-boarding for new team members.
 
-*Use this model when working on medium to large sized project with others,
-especially if working on a team of 5+ developers.*
+_Use this model when working on medium to large sized project with others,
+especially if working on a team of 5+ developers._
 
 #### You Do: Gitflow (10 min / 1:45)
 
@@ -209,6 +221,7 @@ steps in Gitflow draw a diagram on your table of how to execute that step.
 
 - Working off of the `develop` or `dev` branch
 - Creating a feature branch
+  - committing to the feature branch
 - Merging changes in to the `develop` branch
 - "Cutting a release": creating a release branch off of `master`, merging
   `develop` into the release branch and then merging the release branch into
@@ -234,8 +247,8 @@ will).
 **(-)** Could get overwhelming for large projects: one person will spend most of
 their time reviewing and merging pull requests.
 
-*Use this model when working on an open source project or when working with or
-as an outside contractor or freelancer.*
+_Use this model when working on an open source project or when working with or
+as an outside contractor or freelancer._
 
 ### Turn & Talk (10 min / 2:00)
 
@@ -251,9 +264,9 @@ Turn and discuss the following with your neighbor/pair:
 ### Project Week: What does that mean for you?
 
 Your upcoming Project 3 will be a group project. In order for this project to be
-a success for all of you, it is ***vital*** that you decide (together) on a git
-workflow and plan you work. Review the [lesson on
-agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
+a success for all of you, it is **_vital_** that you decide (together) on a git
+workflow and plan you work. Review the
+[lesson on agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
 
 You will need to plan your work using everything we've taught you: ERDs, user
 stories, wireframes, kanban (using GitHub Projects) and a git workflow.
@@ -296,8 +309,7 @@ incorporate informal code reviews into our workflow.
 
 ### Cheat Sheets
 
-- [Github
-  Official](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+- [Github Official](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 - [Interactive Git](http://ndpsoftware.com/git-cheatsheet.html#loc=stash;) (Uses
   slightly different terminology that we're used to, but nifty)
 
@@ -309,10 +321,8 @@ Merge](https://raw.githubusercontent.com/gitforteams/diagrams/master/flowcharts/
 ### Further Reading
 
 - [How to use Git efficiently](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369)
-- [GitHub docs on resolving a merge
-  conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
-- [Git Workflows
-  Overview](https://www.atlassian.com/git/tutorials/comparing-workflows)
+- [GitHub docs on resolving a merge conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+- [Git Workflows Overview](https://www.atlassian.com/git/tutorials/comparing-workflows)
 - [Git Teams](http://gitforteams.com/)
 - [Git Alias](https://githowto.com/aliases)
 
@@ -398,7 +408,6 @@ of your repository in a readable and easy-to-scan format
 [`git-create`](https://www.viget.com/articles/create-a-github-repo-from-the-command-line):
 Bash function that creates a github repo from the command line
 
-
 [`hub`](https://github.com/github/hub): "is a command line tool that wraps git
 in order to extend it with extra features and commands that make working with
 GitHub easier." Hub is built and maintained by GitHub
@@ -408,7 +417,7 @@ GitHub easier." Hub is built and maintained by GitHub
 Rebasing allows us to rearrange and effectively rewrite our commit history.
 Rather than combining the most recent commits from two different branches via a
 single commit, it combines the two branches themselves, rearranging their
-commits while ***re-writing*** the repo's commit history. For that reason, it
+commits while **_re-writing_** the repo's commit history. For that reason, it
 can be dangerous.
 
 ### Git Merge
@@ -432,9 +441,9 @@ feature branch.
 
 One day, someone makes a commit onto the master branch. We want to include those
 changes into our feature branch, so that our code doesn't conflict with theirs.
-From our feature branch, if we run the command `git pull --rebase <remote>
-<branch>`, we can tell git to rewrite the history of our feature branch as if
-the new commit on master had always been there.
+From our feature branch, if we run the command
+`git pull --rebase <remote> <branch>`, we can tell git to rewrite the history of
+our feature branch as if the new commit on master had always been there.
 
 Rebase is extremely useful for cleaning up your commit history, but it also
 carries risk; when you rebase, you are in fact discarding your old commits and
