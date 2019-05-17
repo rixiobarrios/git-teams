@@ -123,7 +123,8 @@ Here are most of the commands you're going to use today and during your project.
 
 With a pair, follow along to this exercise on creating and resolving merge
 conflicts:
-[https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts](https://git.generalassemb.ly/ga-wdi-exercises/merge-conflicts).
+[https://github.com/ga-wdi-exercises/merge-conflicts](https://github.com/ga-wdi-exercises/merge-conflicts)
+
 
 ## Break (10 min / 0:50)
 
@@ -186,7 +187,7 @@ doesn't require strict collaboration_
 #### You Do: Feature Branching (15 min / 1:20)
 
 With your pair, follow along to this guided exercise on using feature branches:
-[https://git.generalassemb.ly/ga-wdi-exercises/feature-branches](https://git.generalassemb.ly/ga-wdi-exercises/feature-branches)
+[https://github.com/ga-wdi-exercises/merge-conflicts](https://github.com/ga-wdi-exercises/merge-conflicts)
 
 ### Gitflow (15 min / 1:35)
 
