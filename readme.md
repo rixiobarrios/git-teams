@@ -269,10 +269,10 @@ workflow and plan you work. Review the
 [lesson on agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
 
 You will need to plan your work using everything we've taught you: ERDs, user
-stories, wireframes, kanban (using GitHub Projects) and a git workflow.
+stories, wireframes and a git workflow.
 
 Spend the first part of project week deciding on what you're going to build.
-Finish your ERDs and then write out your user stories in a GitHub Project on
+Finish your ERDs and save them to a planning directory in a GitHub Project on
 your project repository. Pick a git workflow and get it set up. Plan sprints (a
 day or two) with concrete goals on what everyone is going to finish by the end
 of the sprint. Regularly check in as a team to make sure everyone is still on
@@ -289,7 +289,7 @@ encourage you to read. The short version: code reviews can dramatically reduce
 the number of errors in our code.
 
 In addition, learning to read code critically is an important part of improving
-our own code. After all, to improve our own code, we must read it and looking
+our own code. After all, to improve our own code, we must read it and look
 for ways to improve it.
 
 Additionally, many work environments practice some form of code review, so it's
