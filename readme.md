@@ -331,6 +331,7 @@ incorporate informal code reviews into our workflow.
 
 ### Further Reading
 
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 - [How to use Git efficiently](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369)
 - [GitHub docs on resolving a merge conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
 - [Git Workflows Overview](https://www.atlassian.com/git/tutorials/comparing-workflows)
