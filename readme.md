@@ -48,21 +48,21 @@ You'll see branches used for a couple of common reasons:
    another branch of our choice). If it succeeds, we can merge those changes
    into master.
 
-2. **Parallel work**. By creating a branch, we can work on a feature in
+2. **Isoloate Specific Features**. We can have one branch for the production
+   version of the app and another branch for the version currently under
+   development. If a customer files a bug report, we can make a branch from the
+   production version of the app to fix the bug without affecting the features
+   that are still under active development and not ready to be deployed.
+
+3. **Parallel work**. By creating a branch, we can work on a feature in
    isolation (without affecting the rest of the codebase). When the feature is
    complete, we can merge it into master.
-
-3. **Safe bug fixing**. We can have one branch for the production version of the
-   app and another branch for the version currently under development. If a
-   customer files a bug report, we can make a branch from the production version
-   of the app to fix the bug without affecting the features that are still under
-   active development and not ready to be deployed.
 
 ![Git Branch
 Diagram](https://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730301/hero.svg)
 
 > From
-> [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
+> [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 
 ### Merging and Merge Conflicts
 
@@ -77,7 +77,7 @@ teammates also changed. When this happens, we get merge conflicts.
 
 Merge conflicts look like this:
 
-```sh
+```
 <<<<<<< HEAD
 var x = 1,
     y = 2;
@@ -106,25 +106,25 @@ For example, if we decided we only needed `var x`, delete the other "stuff":
 Now, we have only the code we need and can commit the changes we made to resolve
 the merge conflict.
 
-### Common git commands!
+### Common Git Commands
 
 Here are most of the commands you're going to use today and during your project.
 
-| Command                        | Description                                                           |
-| ------------------------------ | --------------------------------------------------------------------- |
-| `git branch`                   | list branches on your local machine                                   |
-| `git branch -a`                | list branches on local machine + remote machines                      |
-| `git branch <branchName>`      | create a new branch but don't switch to it                            |
-| `git checkout <branchName>`    | switch to a branch that already exists                                |
-| `git checkout -b <branchName>` | create a new branch and switch to it                                  |
-| `git merge <branchName>`       | merges the specified branch (`<branchName>`) into the current branch |
+| Command                        | Description                                                          |
+| ------------------------------ | -------------------------------------------------------------------- |
+| `git branch`                   | List branches on your local machine                                  |
+| `git branch -a`                | List branches on local machine + remote machines                     |
+| `git branch <branchName>`      | Create a new branch but don't switch to it                           |
+| `git checkout <branchName>`    | Switch to a branch that already exists                               |
+| `git checkout -b <branchName>` | Create a new branch and switch to it                                 |
+| `git merge <branchName>`       | Merges the specified branch (`<branchName>`) into the current branch |
 
 #### You do: Merging and Merge Conflicts (20 min / 0:40)
 
-With a pair, follow along to this exercise on creating and resolving merge
-conflicts:
-[https://github.com/ga-wdi-exercises/merge-conflicts](https://github.com/ga-wdi-exercises/merge-conflicts)
+With a pair, follow along to this exercise on
+[creating and resolving merge conflicts](https://git.generalassemb.ly/dc-wdi-react-redux/merge-conflicts).
 
+[Exercise](https://git.generalassemb.ly/dc-wdi-react-redux/merge-conflicts)
 
 ## Break (10 min / 0:50)
 
@@ -147,7 +147,7 @@ of the `master` branch isn't out of sync with the **remote** `master` branch.
 Diagram](https://wac-cdn.atlassian.com/dam/jcr:0869c664-5bc1-4bf2-bef0-12f3814b3187/01.svg)
 
 > From
-> [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
+> [Atlassian - Centralized Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow)
 
 **(+)** Very simple
 
@@ -172,7 +172,7 @@ they are currently working on. When you finish working on your feature you will:
 Workflow](https://wac-cdn.atlassian.com/dam/jcr:80d671b1-8a4b-4378-914c-e25fe3d2dcce/07.svg?cdnVersion=dj)
 
 > From
-> [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+> [Atlassian - Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
 **(+)** Better isolation than the Centralized model, but sharing is still easy.
 Very flexible.
@@ -186,8 +186,8 @@ doesn't require strict collaboration_
 
 #### You Do: Feature Branching (15 min / 1:20)
 
-With your pair, follow along to this guided exercise on using feature branches:
-[https://github.com/ga-wdi-exercises/merge-conflicts](https://github.com/ga-wdi-exercises/merge-conflicts)
+With your pair, follow along with this
+[guided exercise on using feature branches](https://git.generalassemb.ly/dc-wdi-react-redux/feature-branches)
 
 ### Gitflow (15 min / 1:35)
 
@@ -201,10 +201,10 @@ environment (i.e. staging and production) and each release.
 Workflow](<https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg>)
 
 > From
-> [Atlassian - Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+> [Atlassian - Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 **(+)** Features are most isolated from each other and sharing work is still
-easy. It's easy to work on multiple, separate fetures simultaneously and merge
+easy. It's easy to work on multiple, separate features simultaneously and merge
 them in a single release. It's designed to fit in nicely with Agile.
 
 **(-)** The structure is very rigid - that can be complex and difficult to
@@ -251,6 +251,9 @@ their time reviewing and merging pull requests.
 _Use this model when working on an open source project or when working with or
 as an outside contractor or freelancer._
 
+> From
+> [Atlassian - Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
+
 ### Turn & Talk (10 min / 2:00)
 
 > 5 min work, 5 min review
@@ -290,8 +293,8 @@ encourage you to read. The short version: code reviews can dramatically reduce
 the number of errors in our code.
 
 In addition, learning to read code critically is an important part of improving
-our own code. After all, to improve our own code, we must read it and look
-for ways to improve it.
+our own code. After all, to improve our own code, we must read it and look for
+ways to improve it.
 
 Additionally, many work environments practice some form of code review, so it's
 good to get practice in giving feedback to others now.
@@ -310,14 +313,21 @@ incorporate informal code reviews into our workflow.
 
 ### Cheat Sheets
 
-- [Github Official](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
-- [Interactive Git](http://ndpsoftware.com/git-cheatsheet.html#loc=stash;) (Uses
-  slightly different terminology that we're used to, but nifty)
+- [Github Official Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
 
-### Rebase vs Merge
+- [Atlassian Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 
-![Rebase vs
-Merge](https://raw.githubusercontent.com/gitforteams/diagrams/master/flowcharts/rebase-or-merge.png)
+- [Dash App](https://kapeli.com/dash) – "Dash gives your Mac instant offline
+  access to 200+ API documentation sets."
+
+### Tools & Resources
+
+- [hub](https://github.com/github/hub) – "is a command line tool that wraps git
+  in order to extend it with extra features and commands that make working with
+  GitHub easier." Hub is built and maintained by GitHub
+
+- [git flow](https://github.com/nvie/gitflow) – A collection of Git extensions
+  to provide high-level repository operations for the Gitflow Workflow
 
 ### Further Reading
 
@@ -331,12 +341,12 @@ Merge](https://raw.githubusercontent.com/gitforteams/diagrams/master/flowcharts/
 
 ## Tips & Tricks
 
-**Using `git-fetch` and `git-diff`**
+**Using `git fetch` and `git diff`**
 
 What if you are a little out of sync with your teammates and are worried that a
 `git pull` will result in hours of working through merge conflicts?
 
-Use `git-fetch` and `git-diff` to see the changes instead!
+Use `git fetch` and `git diff` to see the changes instead!
 
 ```bash
 git fetch <remote> <branch>
@@ -377,7 +387,7 @@ affected that line.
 
 Additionally, this feature is available to view on Github!
 
-To use git blame on `GitHub`:
+To use git blame on GitHub:
 
 - Navigate to a repository, and click on a file that you're interested in.
 - Click on the Blame button in the upper-right tab list.
@@ -401,17 +411,8 @@ Example Aliases...
 If you are adding an Alias to your bash profile you might have to reload to see
 your updates by running `$ source ~/.bash_profile`
 
-### Tools & Resources
-
-[`git-wtf`](http://git-wt-commit.rubyforge.org/): Script that displays the state
-of your repository in a readable and easy-to-scan format
-
-[`git-create`](https://www.viget.com/articles/create-a-github-repo-from-the-command-line):
-Bash function that creates a github repo from the command line
-
-[`hub`](https://github.com/github/hub): "is a command line tool that wraps git
-in order to extend it with extra features and commands that make working with
-GitHub easier." Hub is built and maintained by GitHub
+Oh-my-zsh also includes great
+[git aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git)
 
 ## Rebasing
 
@@ -432,6 +433,11 @@ Pull/Merge](https://git.generalassemb.ly/storage/user/6376/files/aee6a68e-81b6-1
 Rebase](https://git.generalassemb.ly/storage/user/6376/files/c6f3d54e-81b6-11e7-9f1b-c5a81d1e0207)
 
 [Document Dive](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
+
+### Rebase vs Merge
+
+![Rebase vs
+Merge](https://raw.githubusercontent.com/gitforteams/diagrams/master/flowcharts/rebase-or-merge.png)
 
 <details>
 
