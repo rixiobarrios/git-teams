@@ -207,6 +207,67 @@ for larger projects.
 _Use this model when working on a small to medium sized project with others that
 doesn't require strict collaboration_
 
+#### Example
+
+Archie and Betty are working on Project 3, and Archie is ready to push changes
+from his local branch to the shared remote repo.
+
+**_Archie:_**
+
+```bash
+# After all work in the feature branch is committed, checkout `master`
+archie in local-project-three on  archies-feature-branch
+$ git checkout master
+
+# Fetch any changes from the remote
+archie in local-project-three on  master
+$ git fetch --all
+
+# Pull down and merge any changes from the remote
+archie in local-project-three on  master
+$ git pull
+
+# Merge the feature branch into the local copy of `master` and resolve any conflicts
+archie in local-project-three on  master
+$ git merge archies-feature-branch
+
+archie in local-project-three on  master
+$ git push
+```
+
+After pushing the changes to the remote, Archie should communicate with the team
+that the remote has been updated.
+
+It is a good idea to fetch and pull changes as early and often as possible. Even
+if Betty is still working on her own features, she can fetch and even merge the
+latest commits from the remote to her local repo.
+
+**_Betty:_**
+
+```bash
+# Fetch any changes from the remote, using `--all` doesn't even need to change branches
+betty in local-project-three on  bettys-feature-branch
+$ git fetch --all
+
+# To pull the changes, should checkout `master` otherwise will pull into the active branch
+betty in local-project-three on  bettys-feature-branch
+$ git checkout master
+
+# Pull down and merge any changes from the remote
+betty in local-project-three on  master
+$ git pull
+
+# Since Betty is not ready to merge her changes to master, she can checkout the feature brach she was working on
+betty in local-project-three on  master
+$ git checkout bettys-feature-branch
+
+# Continue working on feature branch
+betty in local-project-three on  bettys-feature-branch
+$
+
+
+```
+
 #### You Do: Feature Branching (15 min / 1:20)
 
 With your pair, follow along with this
