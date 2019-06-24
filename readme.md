@@ -110,14 +110,37 @@ the merge conflict.
 
 Here are most of the commands you're going to use today and during your project.
 
-| Command                        | Description                                                          |
-| ------------------------------ | -------------------------------------------------------------------- |
-| `git branch`                   | List branches on your local machine                                  |
-| `git branch -a`                | List branches on local machine + remote machines                     |
-| `git branch <branchName>`      | Create a new branch but don't switch to it                           |
-| `git checkout <branchName>`    | Switch to a branch that already exists                               |
-| `git checkout -b <branchName>` | Create a new branch and switch to it                                 |
-| `git merge <branchName>`       | Merges the specified branch (`<branchName>`) into the current branch |
+#### Branches
+
+| Command                        | Description                                                                                  |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| `git branch`                   | List branches on your local repo                                                             |
+| `git branch -a`                | List branches on on your local repo and all remotes                                          |
+| `git branch <branchName>`      | Create a new branch but don't switch to it                                                   |
+| `git checkout <branchName>`    | Switch to a branch that already exists                                                       |
+| `git checkout -b <branchName>` | Create a new branch and switch to it                                                         |
+| `git branch -D <branchName>`   | Hard delete a branch (works if commits haven't be pushed to remote, `-d` is the soft delete) |
+| `git merge <branchName>`       | Merges the specified branch (`<branchName>`) into the current branch                         |
+
+#### Remotes
+
+| Command                                       | Description                                              |
+| --------------------------------------------- | -------------------------------------------------------- |
+| `git remote`                                  | List remote names                                        |
+| `git remote -v`                               | List remote names and the full URL (whether HTTP or SHA) |
+| `git remote add <remoteName> <remoteURL>`     | Add a new remote with the given name and url             |
+| `git remote set-url <remoteName> <remoteURL>` | Update the URL of the named remote repo                  |
+| `git remote remove <remoteName>`              | Remove a remote from the local repo                      |
+
+#### Working with Remotes
+
+| Command                                             | Description                                                            |
+| --------------------------------------------------- | ---------------------------------------------------------------------- |
+| `git fetch`                                         | Retrieve changes from the remote (usually `master`)                    |
+| `git fetch --all`                                   | Retrieve all changes from all remotes and all remote branches          |
+| `git pull <remoteName> <branchName>`                | Retrieve changes from the remote and merges them into the local branch |
+| `git push --set-upstream <remoteName> <branchName>` | Upload changes from to the remote (`-u` is shorthand for the option)   |
+| `git push`                                          | When upstream is set, can use command without options                  |
 
 #### You do: Merging and Merge Conflicts (20 min / 0:40)
 
@@ -183,6 +206,67 @@ for larger projects.
 
 _Use this model when working on a small to medium sized project with others that
 doesn't require strict collaboration_
+
+#### Example
+
+Archie and Betty are working on Project 3, and Archie is ready to push changes
+from his local branch to the shared remote repo.
+
+**_Archie:_**
+
+```bash
+# After all work in the feature branch is committed, checkout `master`
+archie in local-project-three on  archies-feature-branch
+$ git checkout master
+
+# Fetch any changes from the remote
+archie in local-project-three on  master
+$ git fetch --all
+
+# Pull down and merge any changes from the remote
+archie in local-project-three on  master
+$ git pull
+
+# Merge the feature branch into the local copy of `master` and resolve any conflicts
+archie in local-project-three on  master
+$ git merge archies-feature-branch
+
+archie in local-project-three on  master
+$ git push
+```
+
+After pushing the changes to the remote, Archie should communicate with the team
+that the remote has been updated.
+
+It is a good idea to fetch and pull changes as early and often as possible. Even
+if Betty is still working on her own features, she can fetch and even merge the
+latest commits from the remote to her local repo.
+
+**_Betty:_**
+
+```bash
+# Fetch any changes from the remote, using `--all` doesn't even need to change branches
+betty in local-project-three on  bettys-feature-branch
+$ git fetch --all
+
+# To pull the changes, should checkout `master` otherwise will pull into the active branch
+betty in local-project-three on  bettys-feature-branch
+$ git checkout master
+
+# Pull down and merge any changes from the remote
+betty in local-project-three on  master
+$ git pull
+
+# Since Betty is not ready to merge her changes to master, she can checkout the feature brach she was working on
+betty in local-project-three on  master
+$ git checkout bettys-feature-branch
+
+# Continue working on feature branch
+betty in local-project-three on  bettys-feature-branch
+$
+
+
+```
 
 #### You Do: Feature Branching (15 min / 1:20)
 
