@@ -404,6 +404,8 @@ incorporate informal code reviews into our workflow.
 - [Dash App](https://kapeli.com/dash) – "Dash gives your Mac instant offline
   access to 200+ API documentation sets."
 
+- [Oh-my-zsh git aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git)
+
 ### Tools & Resources
 
 - [hub](https://github.com/github/hub) – "is a command line tool that wraps git
@@ -497,7 +499,8 @@ If you are adding an Alias to your bash profile you might have to reload to see
 your updates by running `$ source ~/.bash_profile`
 
 Oh-my-zsh also includes great
-[git aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git)
+[git aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) out
+of the box.
 
 ## Rebasing
 
