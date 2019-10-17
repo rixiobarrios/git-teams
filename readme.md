@@ -271,7 +271,7 @@ $
 #### You Do: Feature Branching (15 min / 1:20)
 
 With your pair, follow along with this
-[guided exercise on using feature branches](https://git.generalassemb.ly/seir-826/feature-branches)
+[guided exercise on using feature branches](https://git.generalassemb.ly/seir-826/featureBranches)
 
 ### Gitflow (15 min / 1:35)
 
