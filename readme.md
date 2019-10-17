@@ -145,9 +145,9 @@ Here are most of the commands you're going to use today and during your project.
 #### You do: Merging and Merge Conflicts (20 min / 0:40)
 
 With a pair, follow along to this exercise on
-[creating and resolving merge conflicts](https://git.generalassemb.ly/dc-wdi-react-redux/merge-conflicts).
+[creating and resolving merge conflicts](https://git.generalassemb.ly/seir-826/merge-conflicts).
 
-[Exercise](https://git.generalassemb.ly/dc-wdi-react-redux/merge-conflicts)
+[Exercise](https://git.generalassemb.ly/seir-826/merge-conflicts)
 
 ## Break (10 min / 0:50)
 
@@ -271,7 +271,7 @@ $
 #### You Do: Feature Branching (15 min / 1:20)
 
 With your pair, follow along with this
-[guided exercise on using feature branches](https://git.generalassemb.ly/dc-wdi-react-redux/feature-branches)
+[guided exercise on using feature branches](https://git.generalassemb.ly/seir-826/feature-branches)
 
 ### Gitflow (15 min / 1:35)
 
