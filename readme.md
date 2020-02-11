@@ -145,9 +145,8 @@ Here are most of the commands you're going to use today and during your project.
 #### You do: Merging and Merge Conflicts (20 min / 0:40)
 
 With a pair, follow along to this exercise on
-[creating and resolving merge conflicts](https://git.generalassemb.ly/seir-826/mergeConflicts).
+[creating and resolving merge conflicts](https://git.generalassemb.ly/seir-129/mergeConflicts).
 
-[Exercise](https://git.generalassemb.ly/seir-826/mergeConflicts)
 
 ## Break (10 min / 0:50)
 
