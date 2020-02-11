@@ -279,6 +279,8 @@ their time reviewing and merging pull requests.
 _Use this model when working on an open source project or when working with or
 as an outside contractor or freelancer._
 
+![Fork and PR Workflow](https://wac-cdn.atlassian.com/dam/jcr:642c56e3-ddc6-43ff-ab86-c5cd845afd05/03.svg?cdnVersion=805)
+
 > From
 > [Atlassian - Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
 
