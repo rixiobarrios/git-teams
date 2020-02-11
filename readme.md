@@ -246,19 +246,14 @@ maintain and require more on-boarding for new team members.
 _Use this model when working on medium to large sized project with others,
 especially if working on a team of 5+ developers._
 
-#### You Do: Gitflow
-
-Grab a marker from the front of the classroom. As we go through each of the key
-steps in Gitflow draw a diagram on your table of how to execute that step.
-
 **The key steps in GitFlow are:**
 
-- Working off of the `develop` or `dev` branch
+- Working off of the `development` or `dev` branch
 - Creating a feature branch
   - committing to the feature branch
-- Merging changes in to the `develop` branch
+- Merging changes in to the `development` branch
 - "Cutting a release": creating a release branch off of `master`, merging
-  `develop` into the release branch and then merging the release branch into
+  `development` into the release branch and then merging the release branch into
   `master`
 - Doing a "Hot Fix": Creating a `hot-fix` branch off of `master`, fixing a bug,
   then merging the fix in to `master`
