@@ -70,6 +70,22 @@ As we've learned, we can create branches to create new versions of our project
 from within a repository. We can do this to build out a new feature in isolation
 and then merge those features into the rest of our codebase when we're ready.
 
+#### How to Merge? 
+
+While there is a way to merge branches via the command line, we'll be showing you how to merge via GitHub using pull requests (PR's). So what are the steps? 
+
+1. Add/commit/push your branch up to the repo 
+1. Open a pull request
+1. You should see a bar like this: 
+![](https://i.imgur.com/7YgEVlH.png) 
+   * Make sure the **base** is the branch you want to merge _into_ 
+   * Make sure the **compare** is the branch with changes you want to _merge_ 
+1. Once you've set that up correctly an github tells you it's able to merge, create the pull request
+1. When working in teams, typically you'll want someone else on the team to double check everything and be the one to merge the pull request 
+1. Once everything's been merged, don't forget to pull the changes down to your local!
+
+#### Merge Conflicts 
+
 When we go to merge our work, our coworkers or teammates have likely continued
 working off of master and may have already merged their work. So when we go to
 merge our work we may find that we've changed a file or files that one of our
