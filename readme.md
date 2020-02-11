@@ -284,15 +284,37 @@ as an outside contractor or freelancer._
 > From
 > [Atlassian - Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
 
-## Review
+## Scrum 
 
-1. How do you create a new branch? 
-1. How about creating a new branch and automatically switching into it?
+### History of Scrum
 
-#### Thought Questions 
+[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) was first defined as "a flexible, holistic product development strategy where a development team works as a unit to reach a common goal" as opposed to a "traditional, sequential approach" in 1986 by Hirotaka Takeuchi and Ikujiro Nonaka in the New Product Development Game. Takeuchi and Nonaka later argued in The Knowledge Creating Company that it is a form of "organizational knowledge creation, especially good at bringing about innovation continuously, incrementally and spirally".
 
-1. What are some additional strengths and weaknesses of each workflow?
-2. Which do you think will make the most sense for your upcoming Project 3?
+They called this the holistic or rugby approach, as the whole process is performed by one cross-functional team across multiple overlapping phases, where the team "tries to go the distance as a unit, passing the ball back and forth". (In rugby football, a scrum refers to a tight-packed formation of players with their heads down who attempt to gain possession of the ball.)
+
+As developers, you will work with your team (developers, product managers, project managers, designers, etc.) to get a product out. With the Scrum method, everyone works on the same team and focuses on what needs to be done to reach the final goal.
+
+### Daily Scrum
+
+Each day during a sprint, the team holds a daily scrum (or stand-up) with specific guidelines:
+
+All members of the development team come prepared. The daily scrum...
+
+  ...starts precisely on time even if some development team members are missing<br>
+  ...should happen at the same time and place every day<br>
+  ...is limited (timeboxed) to fifteen minutes<br>
+
+Anyone is welcome, though normally only scrum team roles contribute.
+
+During the daily scrum, each team-member answers three questions:
+
+:one: What did I do yesterday that helped the development team meet the sprint goal?<br>
+:two: What will I do today to help the development team meet the sprint goal?<br>
+:three: Do I see any impediment that prevents me or the development team from meeting the sprint goal?<br>
+
+Any impediment (stumbling block, risk or issue) identified in the daily scrum should be captured by the scrum master and displayed on the team's scrum board, with an agreed person designated to working toward a resolution (outside of the daily scrum). No detailed discussions should happen during the daily scrum.
+
+_Sound familiar?_
 
 ## Resources
 
