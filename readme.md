@@ -137,6 +137,8 @@ Here are most of the commands you're going to use today and during your project.
 | `git checkout -b <branchName>` | Create a new branch and switch to it                                                         |
 | `git branch -D <branchName>`   | Hard delete a branch (works if commits haven't be pushed to remote, `-d` is the soft delete) |
 
+**NOTE:** When creating a new branch, it will create a copy of whatever branch you're currently on. So make sure you're in the correct branch before making a new one! 
+
 #### Remotes
 
 | Command                                       | Description                                              |
