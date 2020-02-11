@@ -263,12 +263,12 @@ $
 
 ```
 
-#### You Do: Feature Branching (15 min / 1:20)
+#### You Do: Feature Branching 
 
 With your pair, follow along with this
 [guided exercise on using feature branches](https://git.generalassemb.ly/seir-826/featureBranches)
 
-### Gitflow (15 min / 1:35)
+### Gitflow 
 
 The Gitflow workflow builds on the Feature Branch model by assigning very
 specific roles to different branches and providing strict guidelines for how
@@ -292,7 +292,7 @@ maintain and require more on-boarding for new team members.
 _Use this model when working on medium to large sized project with others,
 especially if working on a team of 5+ developers._
 
-#### You Do: Gitflow (10 min / 1:45)
+#### You Do: Gitflow
 
 Grab a marker from the front of the classroom. As we go through each of the key
 steps in Gitflow draw a diagram on your table of how to execute that step.
@@ -309,7 +309,7 @@ steps in Gitflow draw a diagram on your table of how to execute that step.
 - Doing a "Hot Fix": Creating a `hot-fix` branch off of `master`, fixing a bug,
   then merging the fix in to `master`
 
-### Fork and PR Workflow (5 min / 1:50)
+### Fork and PR Workflow 
 
 The Fork and PR approach is the model we're all most familiar with: it's how we
 submit our homework, labs and projects. Under this model, everyone maintains
@@ -438,10 +438,6 @@ Example Aliases...
 
 If you are adding an Alias to your bash profile you might have to reload to see
 your updates by running `$ source ~/.bash_profile`
-
-Oh-my-zsh also includes great
-[git aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) out
-of the box.
 
 ## Rebasing
 
