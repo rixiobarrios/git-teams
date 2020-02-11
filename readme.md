@@ -220,7 +220,7 @@ doesn't require strict collaboration_
 #### You Do: Feature Branching 
 
 With your pair, follow along with this
-[guided exercise on using feature branches](https://git.generalassemb.ly/seir-826/featureBranches)
+[guided exercise on using feature branches](https://git.generalassemb.ly/seir-129/featureBranches)
 
 ### Gitflow 
 
@@ -261,7 +261,7 @@ especially if working on a team of 5+ developers._
 ### Fork and PR Workflow 
 
 The Fork and PR approach is the model we're all most familiar with: it's how we
-submit our homework, labs and projects. Under this model, everyone maintains
+submit our homework. Under this model, everyone maintains
 their own remote repository (their fork). Changes are submitted via pull
 request.
 
