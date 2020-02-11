@@ -120,7 +120,6 @@ Here are most of the commands you're going to use today and during your project.
 | `git checkout <branchName>`    | Switch to a branch that already exists                                                       |
 | `git checkout -b <branchName>` | Create a new branch and switch to it                                                         |
 | `git branch -D <branchName>`   | Hard delete a branch (works if commits haven't be pushed to remote, `-d` is the soft delete) |
-| `git merge <branchName>`       | Merges the specified branch (`<branchName>`) into the current branch                         |
 
 #### Remotes
 
@@ -337,62 +336,17 @@ as an outside contractor or freelancer._
 > From
 > [Atlassian - Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
 
-### Turn & Talk (10 min / 2:00)
+## Review
 
-> 5 min work, 5 min review
+1. How do you create a new branch? 
+1. How about creating a new branch and automatically switching into it?
 
-Turn and discuss the following with your neighbor/pair:
+#### Thought Questions 
 
 1. What are some additional strengths and weaknesses of each workflow?
 2. Which do you think will make the most sense for your upcoming Project 3?
 
-## Software Development and Collaboration (10 min / 2:15)
-
-### Project Week: What does that mean for you?
-
-Your upcoming Project 3 will be a group project. In order for this project to be
-a success for all of you, it is **_vital_** that you decide (together) on a git
-workflow and plan you work. Review the
-[lesson on agile](https://git.generalassemb.ly/ga-wdi-lessons/agile) together.
-
-You will need to plan your work using everything we've taught you: ERDs, user
-stories, wireframes and a git workflow.
-
-Spend the first part of project week deciding on what you're going to build.
-Finish your ERDs and save them to a planning directory in a GitHub Project on
-your project repository. Pick a git workflow and get it set up. Plan sprints (a
-day or two) with concrete goals on what everyone is going to finish by the end
-of the sprint. Regularly check in as a team to make sure everyone is still on
-track, if you have a blocker (something the team didn't foresee or plan for or
-something is more complex than you initially scoped) bring that to your check in
-and adjust your sprint schedule. Try pair programming on difficult tasks or
-blockers.
-
-### Do code reviews
-
-Jeff Atwood (co-founder of Stack Exchange and a smart dude) has written a
-[great summary](http://blog.codinghorror.com/code-reviews-just-do-it/) which I
-encourage you to read. The short version: code reviews can dramatically reduce
-the number of errors in our code.
-
-In addition, learning to read code critically is an important part of improving
-our own code. After all, to improve our own code, we must read it and look for
-ways to improve it.
-
-Additionally, many work environments practice some form of code review, so it's
-good to get practice in giving feedback to others now.
-
-Furthermore, Github allows us to comment directly on PRs, so we can easily
-incorporate informal code reviews into our workflow.
-
-## Closing (15 min / 2:30)
-
-### Review Questions
-
-- Identify the syntax needed to create a new branch. How about creating a new
-  branch and switching to it?
-- Why should you never work on the same files on different branches?
-- Explain the difference between rebase and merge
+## Resources
 
 ### Cheat Sheets
 
@@ -402,17 +356,6 @@ incorporate informal code reviews into our workflow.
 
 - [Dash App](https://kapeli.com/dash) – "Dash gives your Mac instant offline
   access to 200+ API documentation sets."
-
-- [Oh-my-zsh git aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git)
-
-### Tools & Resources
-
-- [hub](https://github.com/github/hub) – "is a command line tool that wraps git
-  in order to extend it with extra features and commands that make working with
-  GitHub easier." Hub is built and maintained by GitHub
-
-- [git flow](https://github.com/nvie/gitflow) – A collection of Git extensions
-  to provide high-level repository operations for the Gitflow Workflow
 
 ### Further Reading
 
@@ -425,7 +368,9 @@ incorporate informal code reviews into our workflow.
 
 ## Bonus
 
-## Tips & Tricks
+<details><summary><strong>Want to learn more advanced things about Git?</strong></summary><p>
+   
+   ## Tips & Tricks
 
 **Using `git fetch` and `git diff`**
 
@@ -551,3 +496,7 @@ be resolved. The procedure for doing this is almost the same; once you fix the
 conflicts, run `git rebase --continue` to complete the rebase.
 
 </details>
+
+   
+   </p>
+   </details>
