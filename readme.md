@@ -64,6 +64,20 @@ Diagram](https://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730
 > From
 > [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 
+
+#### Branch Commands
+
+| Command                        | Description                                                                                  |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| `git branch`                   | List branches on your local repo                                                             |
+| `git branch -a`                | List branches on on your local repo and all remotes                                          |
+| `git branch <branchName>`      | Create a new branch but don't switch to it                                                   |
+| `git checkout <branchName>`    | Switch to a branch that already exists                                                       |
+| `git checkout -b <branchName>` | Create a new branch and switch to it                                                         |
+| `git branch -D <branchName>`   | Hard delete a branch (works if commits haven't be pushed to remote, `-d` is the soft delete) |
+
+**NOTE:** When creating a new branch, it will create a copy of whatever branch you're currently on. So make sure you're in the correct branch before making a new one! 
+
 ### Merging and Merge Conflicts
 
 As we've learned, we can create branches to create new versions of our project
@@ -122,22 +136,9 @@ For example, if we decided we only needed `var x`, delete the other "stuff":
 Now, we have only the code we need and can commit the changes we made to resolve
 the merge conflict.
 
-### Common Git Commands
+### Other Common Git Commands
 
-Here are most of the commands you're going to use today and during your project.
-
-#### Branches
-
-| Command                        | Description                                                                                  |
-| ------------------------------ | -------------------------------------------------------------------------------------------- |
-| `git branch`                   | List branches on your local repo                                                             |
-| `git branch -a`                | List branches on on your local repo and all remotes                                          |
-| `git branch <branchName>`      | Create a new branch but don't switch to it                                                   |
-| `git checkout <branchName>`    | Switch to a branch that already exists                                                       |
-| `git checkout -b <branchName>` | Create a new branch and switch to it                                                         |
-| `git branch -D <branchName>`   | Hard delete a branch (works if commits haven't be pushed to remote, `-d` is the soft delete) |
-
-**NOTE:** When creating a new branch, it will create a copy of whatever branch you're currently on. So make sure you're in the correct branch before making a new one! 
+Here are other commands you're going to use today and during your project.
 
 #### Remotes
 
