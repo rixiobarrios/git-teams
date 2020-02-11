@@ -284,6 +284,19 @@ as an outside contractor or freelancer._
 > From
 > [Atlassian - Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
 
+## Agile Development
+
+Agile development uses four clear [delivery vehicles](https://www.atlassian.com/agile/delivery-vehicles) to bring structure to any agile project:
+
+- epics
+- user stories
+- versions
+- sprints
+
+![delivery](https://i.imgur.com/tbUAaEk.png)
+
+By working with these vehicles, software teams are able to organize their work such that they can respond to customer feedback and change from the original plan of the project without feeling like the walls have crumbled around them. The ability to change and adapt future plans based on current insights is a hallmark of agility.
+
 ## Scrum 
 
 ### History of Scrum
